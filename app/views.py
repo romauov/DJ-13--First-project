@@ -38,9 +38,5 @@ def workdir_view(request):
     # my_path = os.path.abspath('app')
     # my_path = os.path.abspath(os.curdir)
     files_list = os.listdir(my_path)
-    # text = ''
-    # for file in files_list:
-    #     text += file
-    #     text += '\n'
-    # print(files_list)
-    return HttpResponse(files_list)
+    text = '<br/>'.join(files_list)
+    return HttpResponse(text)
