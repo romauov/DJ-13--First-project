@@ -1,0 +1,6 @@
+db.sqlite3
+first_project/.idea
+.idea
+__pycache__/
+app/__pycache__/
+first_project/__pycache__/
