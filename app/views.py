@@ -10,7 +10,7 @@ def home_view(request):
     # функцию `reverse`
     pages = {
         'Главная страница': reverse('home'),
-        'Показать текущее время': 'current_time/',
+        'Показать текущее время': reverse('current_time'),
         'Показать содержимое рабочей директории': 'workdir/'
     }
     
